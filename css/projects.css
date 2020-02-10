@@ -1,0 +1,406 @@
+/* color vars */
+
+/* apply google fonts to specific styles */
+
+h6 {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* letter-spacing: -0.6px; */
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+}
+
+.display-5 {
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+/* MEDIA QUERY EXAMPLE - MOBILE (XS) */
+.xs-margin {
+    margin-bottom: 1rem;
+}
+
+/* MEDIA QUERY EXAMPLE - LARGE AND UP */
+@media (min-width: 992px) {
+    .xs-margin {
+        margin-bottom: 0;
+    }
+}
+
+
+/* background cover */
+.bkgd-image-1 {
+    background: url(../images/RisingTuitionCostsMockup.jpg);
+    /* opacity: 0.3; */
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.bkgd-image-2 {
+    background: url(../images/ConceptSketch_RTC.jpg);
+    /* opacity: 0.3; */
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.pink {
+  background-color:#E79798;
+}
+
+.gray {
+  background-color:#f1f1f1;
+}
+.padding {
+padding: 50px;
+}
+
+.opacity {
+  opacity:
+}
+
+.box {
+    border-radius: 0 1rem 0 1rem;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left-border {
+    border-left: 1px solid #999 !important;
+}
+
+
+
+/* COLORS */
+.bg-dark {
+    background-color: var(--dk-yellow) !important;
+}
+
+.light {
+    background-color: var(--lt-yellow);
+}
+
+.lighter {
+    background-color: var(--lt-lt-yellow);
+}
+
+
+
+/* MARGINS, PADDING */
+.more-padding {
+    padding: 4rem !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.padding-top {
+    padding-top: 2rem;
+}
+
+.padding-bottom {
+    padding-bottom: 11rem;
+}
+
+.padding-right {
+    padding-right: 0.7rem !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.margin-bottom {
+    margin-bottom: 2rem;
+}
+
+.show-bkgd {
+    border: #cccccc;
+    background-color: #dddddd;
+}
+
+.v-fill {
+    height: 100%;
+}
+
+
+
+/* BUTTONS */
+.btn-yellow {
+    font-size: 0.75rem;
+    color: #fff;
+    background-color: var(--md-yellow);
+    border-color: var(--md-yellow);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-yellow:hover {
+    color: var(--lt-yellow);
+    border-color: var(--lt-yellow);
+}
+
+/* header/navbar */
+.header {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header ul li a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* FOOTER */
+.dark-footer {
+    background-color: var(--dk-yellow);
+    color: #eee;
+    padding: 2rem 0 8rem 0;
+}
+
+.dark-footer a {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+.dark-footer a:hover {
+    color: #bbb;
+    text-decoration: underline;
+}
+
+
+
+/* flip cards */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    border-radius: 9px;
+    box-shadow: 6px 9px 6px rgba(0, 0, 0, 0.25);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 0;
+}
+
+.flip-card-front {
+    background-color: #fff3d0;
+    z-index: 2;
+}
+
+.flip-card-back {
+    background-color: var(--dk-yellow);
+    color: #fff;
+    transform: rotateY(180deg);
+    z-index: 1;
+    padding: 2rem;
+}
+
+
+/* background images */
+.img-1 {
+    background-image: url("https://placekitten.com/g/350/350");
+    background-color: #aaa;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-2 {
+    background-image: url("https://placekitten.com/g/355/355");
+    background-color: #aaa;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-3 {
+    background-image: url("https://placekitten.com/g/360/360");
+    background-color: #aaa;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.back {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.back a {
+  color: #333333;
+}
+
+.back a:hover {
+  text-decoration: underline;
+}
+
+.archived {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.archived a {
+  color: #E79798;
+}
+
+.social {
+  text-align: center;
+}
+
+.linkedin, .instagram, .behance {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.6em;
+  padding-top: 40px;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  padding-top: 15px;
+}
+
+
+.no-hover {
+  border: none;
+  background-color: #f1f1f1;
+  margin-bottom: 6px;
+}
+
+.no-hover:hover {
+cursor:auto;
+transition: none;
+background-color: #f1f1f1;
+}
+
+a {
+  color: #E79798;
+}
+a:hover {
+  color: #E79798;
+}
+
+.pink-btn {
+  color: #fff;
+  background-color: #E79798;
+  border-color: #E79798;
+  border-width: 1px;
+}
+
+.pink-btn:hover {
+  background-color: #e87072;
+  color: #fff;
+  border-color: #e87072;
+  border-width: 1px;
+}
+
+.attribution {
+  text-align: right;
+}
+
+.sidepadding {
+  padding: 6px;
+}
+
+.profilepic {
+  background-image: url(../images/Nicole_Fall_2019.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  box-sizing:border-box;
+}
+
+@media (min-width: 768px) {
+
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+}
+}

@@ -1,0 +1,268 @@
+/* from class example */
+
+* MEDIA QUERY EXAMPLE - MOBILE (XS) */
+  .xs-margin {
+      margin-bottom: 1rem;
+  }
+
+  /* MEDIA QUERY EXAMPLE - LARGE AND UP */
+  @media (min-width: 992px) {
+      .xs-margin {
+          margin-bottom: 0;
+      }
+  }
+
+  /* BOLD DISPLAY */
+  .bold-display {
+      font-size: 4.1rem;
+      font-weight: 700;
+      line-height: 1.0;
+      letter-spacing: -0.13rem;
+  }
+
+  /* COLORS */
+  .blue {
+      background-color: #00529b;
+      color: #fff;
+  }
+
+  .purple {
+    background-color: #734bdb;
+    color: #fff;
+  }
+
+  .pink {
+    background-color: #E79798;
+    color: #333333;
+  }
+
+  .babyblue {
+    background-color: #7ec5da;
+    color: #333333;
+  }
+
+  .peach {
+    background-color: #da7d7d;
+    color: #333333;
+  }
+
+  .yellow {
+      background-color: #b79415;
+      color: #fff;
+  }
+
+  .red {
+      background-color: #c72e3c;
+      color: #fff;
+  }
+
+  .gray {
+      background-color: #e0dbdc;
+      color: #333;
+  }
+
+  /* MARGINS, PADDING */
+  .more-padding {
+      padding: 2rem !important;
+  }
+
+  .top-padding {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+
+  .no-margin {
+      margin: 0 !important;
+  }
+
+  .show-bkgd {
+      border: #cccccc;
+      background-color: #dddddd;
+  }
+
+  /* BUTTONS */
+  .btn-blue {
+      color: #fff;
+      background-color: #256aa7;
+      border-color: #86b2da;
+      margin: 0 0.4rem 0.4rem 0;
+  }
+
+
+  .btn-blue:hover {
+      color: #fff;
+      background-color: #4f89bd;
+  }
+
+  .btn-white {
+      color: #fff;
+      background-color: ;
+      border-color: #fff;
+      margin: 0 0.4rem 0.4rem 0;
+  }
+
+  .btn-white:hover {
+      color: #333333;
+      background-color: #ffffff80;
+  }
+
+  /* FOOTER */
+  .dark-footer {
+      background-color: #666;
+      color: #eee;
+      padding: 2rem 0 8rem 0;
+      margin-top: 2rem;
+  }
+
+  .dark-footer a {
+      color: #ddd;
+      text-decoration: underline;
+  }
+
+  .dark-footer a:hover {
+      color: #bbb;
+      text-decoration: underline;
+  }
+
+
+  /* end of class example */
+
+.header {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header ul li a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.wrapper {
+  position: relative;
+  /* width: 50%; */
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.overlaycolor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  /* width: 95%; */
+  opacity: 0;
+  transition: .5s;
+  background-color: #E79798;
+  /* -webkit-transform: translate(2.5%, 0%);
+  -ms-transform: translate(2.5%, 0%);
+  transform: translate(2.5%, 0%); */
+}
+
+.overlaytext {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  /* width: 95%; */
+  opacity: 0;
+  transition: .5s;
+  /* -webkit-transform: translate(2.5%, 0%);
+  -ms-transform: translate(2.5%, 0%);
+  transform: translate(2.5%, 0%); */
+}
+
+.wrapper:hover .overlaycolor {
+  opacity: .8;
+}
+
+.wrapper:hover .overlaytext {
+  opacity: 1;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+  -ms-transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.description {
+  color: #333333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.gallery {
+  padding-top: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* .padding {
+  padding-top: 10px;
+} */
+
+.sidepadding {
+  padding: 6px;
+}
+
+.archived {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.archived a {
+  color: #E79798;
+}
+
+.social {
+  text-align: center;
+}
+
+.linkedin, .instagram, .behance {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px;
+}
+
+.copyright {
+  text-align: center;
+}

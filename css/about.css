@@ -1,0 +1,65 @@
+.pagecontent {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.pagecontent h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  text-align: center;
+}
+
+.pagecontent p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.pagecontent a {
+  color: #E79798;
+  font-weight: 500;
+}
+
+.pagecontent h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.resume {
+  width: 100%;
+}
+
+.attribution {
+  text-align: right;
+}
+
+.pagecontent h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.pink {
+  background-color: #E79798;
+}
+
+.padding {
+  padding-top: 10vh;
+}
+
+/* .image {
+  height: 100%;
+} */
+
+.more-padding {
+    padding: 4rem !important;
+}
+
+.gray {
+  background-color:#f1f1f1;
+}
