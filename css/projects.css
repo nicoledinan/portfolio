@@ -459,6 +459,15 @@ a:hover {
   z-index: 10;
 }
 
+.project-title, .project-image {
+  border-radius: 15px;
+}
+
+.grid-container {
+  grid-gap: 2em;
+  padding: 2em;
+}
+
 
 @media (min-width: 768px) {
 
