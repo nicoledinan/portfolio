@@ -449,8 +449,15 @@ a:hover {
   background-size: 5vh 100vw;
 }
 
+ .white {
+   background-color: #fff;
+ }
 
-
+.offset {
+  height: 35vh;
+  overflow: visible;
+  z-index: 10;
+}
 
 
 @media (min-width: 768px) {
