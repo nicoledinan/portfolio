@@ -446,7 +446,7 @@ a:hover {
 }
 
 .wave {
-  max-height: 250px;
+  max-height: 200px;
 }
 
  .white {
@@ -465,6 +465,7 @@ a:hover {
 
 .grid-container {
   grid-gap: 2em;
+  grid-template-columns: auto auto auto;
   padding: 2em;
 }
 
@@ -478,4 +479,72 @@ a:hover {
     float: right!important;
     margin-right: -15px;
 }
+}
+
+
+/* for touch screen devices */
+@media (hover: none) {
+  .project-title {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.6);
+  }
+  .project-title h2 {
+    color: #333333;
+  }
+  .project-image img {
+    filter: blur(0px);
+  }
+
+  .case {
+    opacity: 0;
+    display: hidden;
+  }
+  .project-image .case img {
+    filter: blur(0px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .grid-container .casestudy {
+    grid-column-end: span 1;
+  }
+
+}
+
+
+@media only screen and (max-width: 1220px) {
+  .casestudy-title {
+    font-size: 45px;
+    padding-left: 60px;
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 892px) {
+  .casestudy-title {
+    font-size: 35px;
+    padding-left: 60px;
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .casestudy-title {
+    font-size: 25px;
+    padding-left: 40px;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .casestudy-title {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
 }
