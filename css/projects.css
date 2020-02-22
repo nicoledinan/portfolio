@@ -397,6 +397,60 @@ a:hover {
   box-sizing:border-box;
 }
 
+
+
+.footer-links {
+  padding-bottom: 32px!important;
+}
+
+.footer-links a {
+  color: #333333;
+}
+
+.footer-links a:hover {
+  color: #E79798;
+  text-decoration: none;
+}
+
+.footer-links h5 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.footer-links h6 {
+  font-size: 15px;
+}
+
+.footer-links p {
+  font-size: 14px;
+}
+
+.fab {
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+
+/* index 2 test */
+
+.hero {
+  background-color: #f1f1f1;
+}
+
+.illa {
+  height: 50vh;
+}
+
+.no-btm-padding {
+  padding-bottom: 0!important;
+}
+
+
+
+
+
+
+
 @media (min-width: 768px) {
 
 .navbar-right {
