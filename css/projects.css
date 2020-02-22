@@ -468,6 +468,9 @@ a:hover {
   padding: 2em;
 }
 
+.casestudy .project-image {
+  border-radius: 0;
+}
 
 @media (min-width: 768px) {
 
