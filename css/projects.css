@@ -464,9 +464,9 @@ a:hover {
 }
 
 .grid-container {
-  grid-gap: 2em;
+  grid-gap: 1.8em;
   grid-template-columns: auto auto auto;
-  padding: 2em;
+  padding: 1.8em;
 }
 
 /* .casestudy .project-image {
@@ -475,8 +475,8 @@ a:hover {
 
 .casestudy {
   grid-template-columns: auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
   padding-top: 0;
   padding-bottom: 0;
 }
