@@ -1,6 +1,6 @@
-/* color vars */
-
-/* apply google fonts to specific styles */
+body {
+  overflow-x: hidden;
+}
 
 h6 {
     text-transform: uppercase;
@@ -508,6 +508,7 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
