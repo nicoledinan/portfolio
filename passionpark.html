@@ -17,6 +17,9 @@
 	<!-- stylesheet -->
 	<link href="css/projects.css" rel="stylesheet" />
 
+	<!-- slider stylesheet -->
+	<link href="css/passionpark.css" rel="stylesheet" />
+
   <!-- fontawesome icons  -->
   <script src="https://kit.fontawesome.com/5e57f70baf.js" crossorigin="anonymous"></script>
 
@@ -126,7 +129,7 @@
 		<div class="row">
 
 			<div class="col-sm-8">
-				<img src="images/top5mockup.png" alt="screenshot of mockup in figma" width="100%">
+				<img src="images/passionpark-aerial.png" alt="illustration of aerial view of passion park compared to actual passion flowers" width="100%">
 			</div>
 
 
@@ -137,53 +140,112 @@
 
 				<h3>Why Passion Works?</h3>
 				<p>Passion Park is inspired by Passion Works because it encompasses the qualities of the many service and advocacy organizations integral to the Athens community. For this reason, the Passion Flower is the perfect representation of celebrating advocacy and service in the Athens community.</p>
-
-				<a href="https://www.figma.com/file/Br1kWLhcPwe9i7CxmehRI0/top-5?node-id=0%3A1" target="_blank" class="btn pink-btn">View prototype</a>
 			</div>
-
-
-
-		</div>
-
+			</div>
 		</div>
 	</div>
 
 
-
-<!-- section 4 - live site -->
-	<div class="wrapper">
-		<div class="container-fluid more-padding ">
-			<div class="row ">
-
-
-				<div class="col-md-4">
-					<h2>Live Site</h2>
-
-					<p>After determining the design of the page and style of the map, I coded the site using Bootstrap HTML and CSS.</p>
-
-					<a href="http://top5.surge.sh/" target="_blank" class="btn pink-btn">View live site</a>
-
-					<h3>Features</h3>
-
-					<h4>Interactive Map</h4>
-
-					<p>I included an interactive map in this project to show the locations of the restaurants mentioned. I used Mapbox to create and style this map. The locations of the restaurants were added to the map using JavaScript and GeoJSON. The buttons next to the map allow you to fly between each of the locations on the map.</p>
-
-					<h4>Parallax Images</h4>
-
-					<p>I used a parallax effect on some of the images in this site. To achieve this effect I used CSS to set the background attachment to fixed on the parallax images.</p>
-
-				</div>
-
-				<div class="col-md-8">
-					<img src="images/Top5LunchSpots.png" alt="screenshot of live website" width="100%" style="border: solid 1px #000;">
-				</div>
+<!-- section 4 - park structure -->
+<div class="wrapper">
+	<div class="container-fluid more-padding ">
+		<div class="row">
 
 
+			<div class="col-sm-4">
+				<h2>Park Structure</h2>
+				<p>​Elements come together create a space to explore, reflect, and recharge, uniting the entire community in a space that celebrates not only each other, but the place they call home.</p>
+
+
+				<p><ul>
+					<li>20-foot tall structure shaped like a Passion Works Passion Flower</li>
+					<li>Sculptures of petals inspired by the official flower of Athens</li>
+					<li>Playspace for all ages</li>
+					<li>A brick walkway will lead guests into the park and through an accessible labyrinth
+					of discovery and play and to the playground at the center of the installation</li>
+				</ul></p>
 			</div>
+
+			<div class="col-sm-8">
+				<img src="images/passionpark-illustration.png" alt="illustration of passion park" width="100%">
+			</div>
+
 
 			</div>
 		</div>
+	</div>
+
+	<!-- section 5 - Interactivity as a Means to Inspire  -->
+	<div class="wrapper">
+		<div class="container-fluid more-padding gray">
+			<div class="row">
+
+				<div class="col-sm-8">
+					<img src="images/passionpark-aerial.png" alt="illustration of aerial view of passion park compared to actual passion flowers" width="100%">
+				</div>
+
+
+				<div class="col-sm-4">
+					<h2>Interactivity as a Means to Inspire</h2>
+					<p>​At Passion Park, our purpose is twofold: celebrate the work of local advocacy groups and inspire people of all ages and abilities to make a change in their local communities.</p>
+
+					<p><ul>
+						<li>Upcycled aluminum</li>
+						<li>Touchscreen technology</li>
+						<li>Interactive petals promote interactivity as a means of inspiration</li>
+					</ul></p>
+
+				</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	<!-- section 6 - park perspectives -->
+	<div class="wrapper">
+		<div class="container-fluid more-padding">
+			<div class="row">
+
+
+				<div class="col-sm-4">
+					<h2>Park Perspectives</h2>
+					<h3>Day</h3>
+					<p><ul>
+						<li>Playspace for guests of all ages to explore and discover hidden stories</li>
+
+						<li>A variety of slides, swings, sandboxes, and spiral sculptures that mimic the center of a Passion Flower</li>
+
+						<li>Interactive touch screens built into the back of the surrounding petal sculptures that allow children to discover more about advocacy in their community</li></ul></p>
+
+					<h3>Night</h3>
+					<p><ul>
+							<li>Exciting light shows that illuminate the petal sculptures and playground equipment</li>
+
+							<li>Provides a safe, well-lit space for children
+							after dark</li>
+
+							<li>Interactive touch screens control parts of the light shows and the accompanying music</li></p>
+				</div>
+
+				<div class="col-sm-8">
+
+					<div class="img-comp-container">
+					  <div class="img-comp-img">
+					    <img src="images/passionpark-night.png" width="600" height="600">
+					  </div>
+					  <div class="img-comp-img img-comp-overlay">
+					    <img src="images/passionpark-day.png" width="600" height="600">
+					  </div>
+					</div>
+
+				</div>
+
+
+				</div>
+			</div>
+		</div>
+
 
 
 
@@ -261,6 +323,90 @@
 	<script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
 	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 	<script src="https://unpkg.com/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+	<script>
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
 
 </body>
 
