@@ -509,6 +509,15 @@ a:hover {
   justify-content: center;
 }
 
+.cta {
+  color: #212529;
+}
+
+.cta:hover {
+  color: #e79798;
+  text-decoration: none;
+}
+
 
 
 
