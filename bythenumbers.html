@@ -39,7 +39,7 @@
 <body>
 
 <!-- nav bar -->
-<div class="header">
+<div class="header white">
 <nav class="navbar navbar-expand-md navbar-light align-botttom">
 	<a class="navbar-brand" href="index.html">Nicole Dinan</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,6 +116,7 @@
 							<button type="button" class="btn btn-light no-hover">Flourish</button>
 							<button type="button" class="btn btn-light no-hover">HTML</button>
 							<button type="button" class="btn btn-light no-hover">CSS</button>
+							<button type="button" class="btn btn-light no-hover">JavaScript</button>
 							<button type="button" class="btn btn-light no-hover">Figma</button>
 
 						</div>
@@ -139,9 +140,6 @@
 				<p>I started this project by creating a sketch of my plan for the layout of the visualization.</p>
 
 				<p>My idea was to create an interactive web page that shows the breakdown of the first-year enrollment by sex for each college. The page would have a drop down menu to select a college and then have embedded charts (made with Flourish) that populate beneath the drop down when a college is selected.</p>
-
-				<p> To represent the I want to do a donut chart to represent the percentages of male and female students for 2019 on the left and then a line chart on the right that shows the changes over the last 10 or 20 years.
-				</p>
 			</div>
 
 			<div class="col-sm-7">
@@ -159,14 +157,15 @@
 			<div class="row ">
 
 				<div class="col-md-8 order-1">
-					<img src="images/RTC_Figma_Prototype.png" alt="concept sketch" width="100%">
+					<img src="images/flourishcharts.png" alt="flourish charts screenshot" width="100%">
 				</div>
 
 				<div class="col-md-4 order-md-1">
-					<h2>Prototype</h2>
-					<p>After I had the concept figured out, I created a prototype in Figma and developed the design style of the page.
+					<h2>Charts</h2>
+					<p> To represent the most recent percentages of male and female students (2019), I used a donut chart and to represent the changes in these numbers over the last 19 years I used a line chart.
 					</p>
-					<a href="https://www.figma.com/file/gdY7deKXIMKoS6NxciSjy1/Final-Project-Protoype" target="_blank" class="btn pink-btn">View prototype</a>
+					<p>I built these charts in Flourish, using data from <a href="https://www.ohio.edu/instres/student/admstats/" target="_blank">Ohio University's Office of Institutional Research</a>.</p>
+					<p>Figures reported represent the number of new first-year male and female students enrolled in each college on Ohio University's Athens campus at the beginning of fall semester.</p>
 
 				</div>
 
@@ -178,19 +177,21 @@
 
 	<!-- section 5 - mockup -->
 		<div class="wrapper">
-			<div class="container-fluid more-padding white">
+			<div class="container-fluid more-padding gray">
 				<div class="row ">
 
-					<div class="col-md-8 order-1">
-						<img src="images/RTC_Figma_Prototype.png" alt="concept sketch" width="100%">
-					</div>
+
 
 					<div class="col-md-4 order-md-1">
-						<h2>Prototype</h2>
-						<p>After I had the concept figured out, I created a prototype in Figma and developed the design style of the page.
+						<h2>Mockup</h2>
+						<p>I created a mockup in Figma of what I wanted this data visualization to look like.
 						</p>
-						<a href="https://www.figma.com/file/gdY7deKXIMKoS6NxciSjy1/Final-Project-Protoype" target="_blank" class="btn pink-btn">View prototype</a>
+						<a href="https://www.figma.com/file/U3RyiDEkTbcI7UnTGdoyu9/By-the-Numbers-Mockup" target="_blank" class="btn pink-btn">View mockup</a>
 
+					</div>
+
+					<div class="col-md-8 order-1">
+						<img src="images/bythenumbers-figma.png" alt="figma mockup" width="100%">
 					</div>
 
 				</div>
@@ -200,36 +201,30 @@
 
 <!-- section 6 - live site -->
 	<div class="wrapper">
-		<div class="container-fluid more-padding gray">
+		<div class="container-fluid more-padding white">
 			<div class="row ">
 
 
 				<div class="col-md-4">
 					<h2>Live Site</h2>
 
-					<p>Next, I coded the site using HTML, CSS and JavaScript.</p>
+					<p>After creating the charts from the data, I coded a web page to display the data visualization in a way that let people interact with it and explore it. I used HTML, CSS and JavaScript to build the page </p>
 
-					<a href="http://ohio-tuition.surge.sh/" target="_blank" class="btn pink-btn">View live site</a>
+					<a href="http://bythenumbers.surge.sh/" target="_blank" class="btn pink-btn">View live site</a>
 
 					<h3>Features</h3>
 
-					<h4>Chart.js Line Chart</h4>
+					<h4>Embedded Flourish Charts</h4>
 
-					<p>With data sourced from the Ohio Department of Higher Education I used Chart.js to create and style a line chart that compares the average yearly tuition of University Main Campuses, University Regional Campuses and Community Colleges from 2008 to 2019.</p>
+					<p>I used Flourish to create the charts that this data visualization displays. While there are some design limitations that come with embedding Flourish charts, it was the most efficient way I found to display the data in an interactive format. </p>
 
-					<h4>Interactive Map</h4>
+					<h4>Drop Down Selector</h4>
 
-					<p>I imported the tuition data from the Ohio Department of Higher Education as a layer in Mapbox and styled the location points of each school by sector. The blue dots represent University Main Campuses, the pink dots are University Regional Campuses, and the orange dots signify Community Colleges. When a point on the map is selected, the name of the school and the percent increase in tuition costs from 2008–2019 populate below the map. The percent change figure is color coded to match the type of school that was selected.</p>
-
-					<h3>Challenges</h3>
-
-					<h4>Scroll to Zoom vs. Page Scroll on Map</h4>
-
-					<p>One of the problems that I ran into with this site was that the user would get stuck on the map section of the page and not be able to scroll back up or down the page because of the scroll to zoom feature that Mapbox has. To remedy this problem, I decreased the height of the map section and used JavaScript to restrict the map's scroll to zoom function to within the boundaries of Ohio on the map. So when you scroll on the darker portions of the map, the page will move up and down, but when you scroll on the lighter part (the state of Ohio area) the map will zoom in and out.</p>
+					<p>I included a drop down selector in this site so that people could select the college that they are interested in seeing the data for. This helps eliminate the information overload that could occur if all of the data visualizations were displayed at once.</p>
 				</div>
 
 				<div class="col-md-8">
-					<img src="images/RisingTuitionCostsScreengrab.png" alt="concept sketch" width="100%">
+					<img src="images/bythenumbers-livesite.png" alt="screenshot of live site" width="100%">
 				</div>
 
 
@@ -240,7 +235,7 @@
 
 
 
-<p class="back"><a href="index.html">Back to Gallery</a></p>
+<p class="back"><a href="index.html" class="btn pink-btn">Return to Gallery</a></p>
 
 <!-- footer -->
 <div class="wrapper more-padding gray footer-links">

@@ -296,17 +296,17 @@ padding: 50px;
 
 
 .back {
-  padding-top: 40px;
+  padding: 40px;
   text-align: center;
 }
 
-.back a {
+/* .back a {
   color: #333333;
 }
 
 .back a:hover {
   text-decoration: underline;
-}
+} */
 
 .archived {
   padding-top: 20px;
