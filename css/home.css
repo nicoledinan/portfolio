@@ -70,6 +70,40 @@
   border-radius: 15px;
 }
 
+.current {
+  background: url(../images/currentstudents.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.goldrush {
+  background: url(../images/goldrush.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+
+.cayman {
+  background: url(../images/cayman.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+
+
+
 
 
 
