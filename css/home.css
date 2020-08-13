@@ -1,0 +1,166 @@
+.top-margin {
+  margin-top: 20px;
+}
+
+.left {
+  padding-right: 10px;
+}
+
+.right {
+  padding-left: 10px;
+}
+
+.aviation {
+  background: url(../images/aviation.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.soul {
+  background: url(../images/soul.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.top-5 {
+  background: url(../images/top5.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.devhack {
+  background: url(../images/devhack.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.numbers {
+  background: url(../images/numbers.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.rtc {
+  background: url(../images/rtc.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+
+
+
+
+.project-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 200px;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.project-content a {
+  color: #fff;
+}
+
+.project-content a:hover {
+  text-decoration: none;
+}
+
+.category {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.project-name {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  max-width: 50%;
+}
+
+.project-btn-text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 21px;
+}
+
+.btn-border {
+  position: relative;
+  width: 160px;
+  height: 45px;
+  border: 1px solid;
+  border-color: #fff;
+}
+
+.btn-border:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 992px) {
+  .left {
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
+
+  .right {
+    padding-left: 15px;
+  }
+}
