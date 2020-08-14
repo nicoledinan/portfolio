@@ -10,6 +10,10 @@
   padding-left: 10px;
 }
 
+.bottom {
+  padding-bottom: 20px;
+}
+
 .aviation {
   background: url(../images/aviation.png);
   height: 450px;
@@ -93,6 +97,36 @@
 
 .cayman {
   background: url(../images/cayman.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.annualreport {
+  background: url(../images/annualreport.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.viasat {
+  background: url(../images/viasat.png);
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+
+.mhe {
+  background: url(../images/mhe.png);
   height: 450px;
   background-position: center;
   background-repeat: no-repeat;
