@@ -232,3 +232,33 @@
     padding-left: 15px;
   }
 }
+
+@media only screen and (max-width: 1102px) {
+  .soul, .top-5, .numbers, .rtc, .goldrush, .cayman, .viasat, .mhe {
+    height: 500px;
+  }
+
+  .soul .project-content, .top-5 .project-content, .numbers .project-content, .rtc .project-content, .goldrush .project-content, .cayman .project-content, .viasat .project-content, .mhe .project-content {
+    margin-top: 95px;
+  }
+}
+
+@media only screen and (max-width: 693px) {
+  .soul, .top-5, .numbers, .rtc, .goldrush, .cayman, .viasat, .mhe {
+    height: 450px;
+  }
+
+  .aviation, .current, .annualreport, .devhack {
+    height: 500px;
+  }
+
+  .aviation .project-content, .current .project-content, .annualreport .project-content, .devhack .project-content {
+    margin-top: 95px;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+
+}
