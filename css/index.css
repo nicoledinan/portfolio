@@ -18,6 +18,9 @@
   align-items: baseline;
 }
 
+.navbar-brand {
+  margin: 0 1rem;
+}
 
 .archived {
   padding-top: 40px;

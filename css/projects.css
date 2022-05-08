@@ -518,9 +518,17 @@ a:hover {
   text-decoration: none;
 }
 
+label {
+  margin-top: 1rem;
+}
 
+.submit {
+  margin-top: 1rem;
+}
 
-
+.navbar-brand {
+  margin: 0 1rem;
+}
 
 @media (min-width: 768px) {
 

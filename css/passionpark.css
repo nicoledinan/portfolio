@@ -28,3 +28,7 @@
   opacity: 0.7;
   border-radius: 50%;
 }
+
+.navbar-brand {
+  margin: 0 1rem;
+}
